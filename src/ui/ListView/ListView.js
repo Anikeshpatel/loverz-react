@@ -8,7 +8,7 @@ export default class ListView extends React.Component {
     generateFakeList() {
         const items = []
         for(let i=0; i<= 10; i++) {
-            items.push(<ListItem/>)
+            items.push(<ListItem key={i}/>)
         }
         return items
     }
