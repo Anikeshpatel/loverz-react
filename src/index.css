@@ -67,11 +67,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
 }
 
 .header .nav .searchBox i {
   padding: 0 5px;
+  font-size: 1rem;
 }
 
 .header .nav .searchBox input {
@@ -92,7 +96,7 @@ body {
 .listViewWarpper {
   width: 100%;
   height: 100%;
-  top: 70px;
+  top: 80px;
   position: relative;
 }
 
@@ -100,5 +104,100 @@ body {
   width: 35%;
   height: 100%;
   margin: 0 auto;
+}
+
+.listItem {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+.listItem header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.listItem header img {
+  border-radius: 50%;
+  widows: 35px;
+  height: 35px;
+}
+
+.listItem header h2 {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.listItem .postView {
+  width: 100%;
+  height: 100%;
+}
+
+.listItem .postActionsLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.listItem .postActionsLayout i {
+  font-size: 2rem;
+}
+
+.listItem .postLikeViewLayout {
+  margin-left: 10%;
+}
+
+.listItem .postLikeViewLayout spam {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.listItem .postCaptionView {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.listItem .quickCommentLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 50px;
+}
+
+.listItem .quickCommentLayout img {
+  border-radius: 50%;
+  widows: 30px;
+  height: 30px;
+  border: 2px solid cyan;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.listItem .quickCommentLayout input {
+  border: none;
+  outline: none;
+  height: 100%;
+  margin-left: 10px;
+  width: 100%;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -10,7 +10,7 @@ export default class Header extends React.Component {
                     </div>
                     <div className="spacer"/>
                     <div className="searchBox">
-                        <i>O</i>
+                        <i className="fas fa-search" ></i>
                         <input type="text" placeholder="Search" />
                     </div>
                     <div className="spacer"/>

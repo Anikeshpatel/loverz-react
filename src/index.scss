@@ -56,10 +56,12 @@ body {
             box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
             padding: 5px 5px;
             display: flex;
+            align-items: center;
             border-radius: 10px;
 
             & i {
                 padding: 0 5px;
+                font-size: 1rem;
             }
 
             & input {
@@ -81,12 +83,94 @@ body {
 .listViewWarpper {
     width: 100%;
     height: 100%;
-    top: 70px;
+    top: 80px;
     position: relative;
 
     & .listView {
         width: 35%;
         height: 100%;
         margin: 0 auto;
+    }
+}
+
+.listItem {
+    width: 100%;
+    height: 100%;
+    background-color: $colorPrimary;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+
+    & header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    & header img {
+        border-radius: 50%;
+        widows: 35px;
+        height: 35px;
+    }
+
+    & header h2 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    & .postView {
+        width: 100%;
+        height: 100%;
+    }
+
+    & .postActionsLayout {
+        display: flex;
+        padding: 10px;
+        justify-content: space-around;
+
+        & i {
+            font-size: 2rem;
+        }
+    }
+
+    & .postLikeViewLayout {
+        margin-left: 10%;
+
+        & spam {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    }
+
+    & .postCaptionView {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    & .quickCommentLayout {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        padding: 10px;
+        background-color: $colorSecondary;
+        border-radius: 50px;
+
+        & img {
+            border-radius: 50%;
+            widows: 30px;
+            height: 30px;
+            border: 2px solid $colorAccent;
+            box-sizing: content-box;
+        }
+
+        & input {
+            border: none;
+            outline: none;
+            height: 100%;
+            margin-left: 10px;
+            width: 100%;
+            border-radius: 50px;
+        }
     }
 }
