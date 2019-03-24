@@ -3,10 +3,26 @@ import React from 'react'
 export default class Header extends React.Component {
     render() {
         return (
-            <header>
-                <nav>
+            <header className="header">
+                <nav className="nav">
                     <div>
                         <h1>Loverz</h1>
+                    </div>
+                    <div className="spacer"/>
+                    <div className="searchBox">
+                        <i>O</i>
+                        <input type="text" placeholder="Search" />
+                    </div>
+                    <div className="tabLayout">
+                        <div className="tab">
+                            <i>Finder</i>
+                        </div>
+                        <div className="tab">
+                            <i>Notification</i>
+                        </div>
+                        <div className="tab">
+                            <i>Profile</i>
+                        </div>
                     </div>
                 </nav>
             </header>

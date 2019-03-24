@@ -22,5 +22,33 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #4f4f4f;
+  background: #fafafa;
+}
+
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 70px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header .nav {
+  border: 1px solid red;
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav .tabLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=index.css.map */

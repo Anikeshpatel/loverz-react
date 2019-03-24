@@ -1,5 +1,6 @@
 // Color Theme
 $colorPrimary : #ffffff;
+$colorSecondary: #fafafa;
 $colorDark : #4f4f4f;
 $colorAccent: cyan;
 
@@ -23,4 +24,29 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: $colorDark;
+  background: $colorSecondary;
+}
+
+.header {
+    background-color: $colorPrimary;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+
+    & .nav {
+        border: 1px solid red;
+        width: 70%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        & .tabLayout {
+            display: flex;
+            
+            & .tab {
+                
+            }
+        }
+    }
 }
