@@ -23,7 +23,7 @@ export default class Header extends React.Component {
             <header className="header">
                 <nav className="nav">
                     <div>
-                        <h1>Loverz</h1>
+                        <h1 className="logoText">Loverz</h1>
                     </div>
                     <div className="spacer"/>
                     <div className="searchBox">
