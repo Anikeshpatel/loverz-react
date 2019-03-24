@@ -13,6 +13,7 @@ export default class Header extends React.Component {
                         <i>O</i>
                         <input type="text" placeholder="Search" />
                     </div>
+                    <div className="spacer"/>
                     <div className="tabLayout">
                         <div className="tab">
                             <i>Finder</i>
