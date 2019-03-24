@@ -16,13 +16,13 @@ export default class Header extends React.Component {
                     <div className="spacer"/>
                     <div className="tabLayout">
                         <div className="tab">
-                            <i>Finder</i>
+                            <i className="fas fa-search"> Finder</i>
                         </div>
                         <div className="tab">
-                            <i>Notification</i>
+                            <i className="far fa-bell"> Notification</i>
                         </div>
                         <div className="tab">
-                            <i>Profile</i>
+                            <i className="far fa-user"> Profile</i>
                         </div>
                     </div>
                 </nav>
