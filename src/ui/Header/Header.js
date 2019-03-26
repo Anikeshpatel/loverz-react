@@ -3,8 +3,8 @@ import React from 'react'
 import NoticationPanel from '../NoticationPanel/NoticationPanel'
 
 export default class Header extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             isNotificationShown: false
         }
@@ -13,10 +13,10 @@ export default class Header extends React.Component {
     onNotificationTabCLicked = () => {
         this.setState((prevStatwe) => {
             return {
-                isNotificationShown: !prevStatwe.isNotificationShown 
+                isNotificationShown: !prevStatwe.isNotificationShown
             }
         })
-    }
+    };
 
     render() {
         return (
@@ -27,8 +27,8 @@ export default class Header extends React.Component {
                     </div>
                     <div className="spacer"/>
                     <div className="searchBox">
-                        <i className="fas fa-search" ></i>
-                        <input type="text" placeholder="Search" />
+                        <i className="fas fa-search"/>
+                        <input type="text" placeholder="Search"/>
                     </div>
                     <div className="spacer"/>
                     <div className="tabLayout">
@@ -48,4 +48,3 @@ export default class Header extends React.Component {
         )
     }
 }
-
