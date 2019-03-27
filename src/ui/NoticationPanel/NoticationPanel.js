@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import NotificationItem from '../NotificationItem/NotificationItem'
+
 export default class NoticationPanel extends Component {
 
     constructor() {
@@ -16,7 +18,19 @@ export default class NoticationPanel extends Component {
                     <div className="pointer"/>
                     <div className="pointerHelper"/>
                     <div className="body">
-                    <h1>Notification</h1>
+                        <NotificationItem type="like"/>
+                        <NotificationItem type="comment"/>
+                        <NotificationItem type="message"/>
+                        <NotificationItem type="follow"/>
+                        <NotificationItem type="request"/>
+                        <NotificationItem type="comment"/>
+                        <NotificationItem type="message"/>
+                        <NotificationItem type="request"/>
+                        <NotificationItem type="like"/>
+                        <NotificationItem type="like"/>
+                        <NotificationItem type="comment"/>
+                        <NotificationItem type="follow"/>
+                        <NotificationItem type="message"/>
                     </div>
                 </div>
                 )
@@ -25,3 +39,5 @@ export default class NoticationPanel extends Component {
         }
     }
 }
+
+
