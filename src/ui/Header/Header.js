@@ -37,8 +37,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className="tab" onClick={this.onNotificationTabCLicked}>
                             <i className="far fa-bell"> Notification</i>
-                            {/* <NoticationPanel isShown={this.state.isNotificationShown}/> */}
-                            <NoticationPanel isShown={true}/>
+                            <NoticationPanel isShown={this.state.isNotificationShown}/>
                         </div>
                         <div className="tab">
                             <i className="far fa-user"> Profile</i>
